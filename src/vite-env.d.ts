@@ -13,3 +13,11 @@ interface Tableau {
     options?: TableauVizOptions
   ) => void;
 }
+
+declare global {
+  interface Window {
+    tableau: Tableau;
+  }
+}
+
+export {};
