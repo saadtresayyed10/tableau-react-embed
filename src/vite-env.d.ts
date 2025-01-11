@@ -5,3 +5,11 @@ interface TableauVizOptions {
   height?: string;
   [key: string]: unknown;
 }
+
+interface Tableau {
+  Viz: new (
+    container: HTMLElement,
+    url: string,
+    options?: TableauVizOptions
+  ) => void;
+}
